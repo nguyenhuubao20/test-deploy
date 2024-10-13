@@ -21,11 +21,11 @@ jobs:
         with:
           dotnet-version: '8.x'
 
-      - name: Build with dotnet
-        run: dotnet build test-deploy --configuration Release
+      - name: Build the project
+        run: dotnet build ./test-deploy --configuration ${{ env.CONFIGURATION }} --no-restore
 
-      - name: dotnet publish
-        run: dotnet publish test-deploy -c Release -o ${{env.DOTNET_ROOT}}/myapp
+      - name: Publish the project
+        run: dotnet publish ./test-deploy --configuration ${{ env.CONFIGURATION }} -o ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
