@@ -1,3 +1,6 @@
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
 name: Build and deploy ASP.Net Core app to Azure Web App - Testdeploydd
 
 on:
@@ -16,22 +19,19 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '6.0.x'
+          dotnet-version: '3.1'
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o ./bin/Release/net6.0/publish
-
-      - name: List files in publish directory
-        run: dir ./bin/Release/net6.0/publish  # Kiểm tra file trong thư mục publish
+        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ./bin/Release/net6.0/publish/**
+          path: ${{env.DOTNET_ROOT}}/myapp
 
   deploy:
     runs-on: windows-latest
@@ -40,7 +40,7 @@ jobs:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
-      id-token: write # This is required for requesting the JWT
+      id-token: write #This is required for requesting the JWT
 
     steps:
       - name: Download artifact from build job
@@ -51,9 +51,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_580BB3C45C8940FAAA8342EE42258B87 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_BA98E0A7838342AFAC520DE922E40CDD }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F342C5E2F8104CEAA6EA3FAB6344848D }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_1583ED610D854791A020038518B56242 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_FCADEF50349D4AE3874FE4694C25B5DA }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_A025D01AEA674AA9B4112C7EB5F0546B }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
@@ -61,4 +61,5 @@ jobs:
         with:
           app-name: 'Testdeploydd'
           slot-name: 'Production'
-          package: ./bin/Release/net6.0/publish  # Đường dẫn đến thư mục chứa file publish
+          package: .
+          
