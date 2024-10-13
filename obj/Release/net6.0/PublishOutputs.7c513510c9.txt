@@ -1,6 +1,16 @@
 C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Release\net6.0\PubTmp\Out\TestDeploy.exe
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Release\net6.0\PubTmp\Out\publish\publish\web.config
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Release\net6.0\PubTmp\Out\publish\web.config
 C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
 C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Release\net6.0\PubTmp\Out\publish\appsettings.Development.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Release\net6.0\PubTmp\Out\publish\appsettings.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Release\net6.0\PubTmp\Out\publish\publish\appsettings.Development.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Release\net6.0\PubTmp\Out\publish\publish\appsettings.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Release\net6.0\PubTmp\Out\publish\publish\TestDeploy.deps.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Release\net6.0\PubTmp\Out\publish\publish\TestDeploy.runtimeconfig.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Release\net6.0\PubTmp\Out\publish\TestDeploy.deps.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Release\net6.0\PubTmp\Out\publish\TestDeploy.runtimeconfig.json
 C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Release\net6.0\PubTmp\Out\TestDeploy.dll
 C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Release\net6.0\PubTmp\Out\TestDeploy.deps.json
 C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Release\net6.0\PubTmp\Out\TestDeploy.runtimeconfig.json

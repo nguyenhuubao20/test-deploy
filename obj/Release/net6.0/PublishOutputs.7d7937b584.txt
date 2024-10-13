@@ -1,0 +1,16 @@
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\publish\TestDeploy.exe
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\publish\publish\web.config
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\publish\appsettings.Development.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\publish\appsettings.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\publish\publish\appsettings.Development.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\publish\publish\appsettings.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\publish\publish\TestDeploy.deps.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\publish\publish\TestDeploy.runtimeconfig.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\publish\TestDeploy.dll
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\publish\TestDeploy.deps.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\publish\TestDeploy.runtimeconfig.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\publish\TestDeploy.pdb
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\publish\Microsoft.OpenApi.dll
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\publish\Swashbuckle.AspNetCore.SwaggerUI.dll

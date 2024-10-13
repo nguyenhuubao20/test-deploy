@@ -31,3 +31,13 @@ C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Debug\net6.0\TestDeploy
 C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Debug\net6.0\TestDeploy.genruntimeconfig.cache
 C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Debug\net6.0\ref\TestDeploy.dll
 C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Debug\net6.0\TestDeploy.sourcelink.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\bin\Debug\net6.0\publish\publish\web.config
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\bin\Debug\net6.0\publish\web.config
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\bin\Debug\net6.0\publish\appsettings.Development.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\bin\Debug\net6.0\publish\appsettings.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\bin\Debug\net6.0\publish\publish\appsettings.Development.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\bin\Debug\net6.0\publish\publish\appsettings.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\bin\Debug\net6.0\publish\publish\TestDeploy.deps.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\bin\Debug\net6.0\publish\publish\TestDeploy.runtimeconfig.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\bin\Debug\net6.0\publish\TestDeploy.deps.json
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\bin\Debug\net6.0\publish\TestDeploy.runtimeconfig.json
