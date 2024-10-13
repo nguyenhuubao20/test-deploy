@@ -25,7 +25,7 @@ jobs:
         run: dotnet publish -c Release -o ./bin/Release/net6.0/publish
 
       - name: List files in publish directory
-        run: dir ./bin/Release/net6.0/publish  # Xác nhận nội dung thư mục publish
+        run: dir ./bin/Release/net6.0/publish  # Kiểm tra file trong thư mục publish
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -61,4 +61,4 @@ jobs:
         with:
           app-name: 'Testdeploydd'
           slot-name: 'Production'
-          package: './bin/Release/net6.0/publish'  # Đường dẫn đến thư mục chứa các file đã publish
+          package: ./bin/Release/net6.0/publish  # Đường dẫn đến thư mục chứa file publish
