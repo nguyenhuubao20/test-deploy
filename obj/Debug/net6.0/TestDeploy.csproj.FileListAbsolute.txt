@@ -30,3 +30,4 @@ C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Debug\net6.0\refint\Tes
 C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Debug\net6.0\TestDeploy.pdb
 C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Debug\net6.0\TestDeploy.genruntimeconfig.cache
 C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Debug\net6.0\ref\TestDeploy.dll
+C:\Users\ADMIN-PC\source\repos\TestDeploy\TestDeploy\obj\Debug\net6.0\TestDeploy.sourcelink.json
