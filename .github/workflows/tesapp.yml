@@ -1,36 +1,46 @@
 name: Build and deploy .NET Core application to Web App tesapp
+
 on:
   push:
     branches:
     - main
+
 env:
   AZURE_WEBAPP_NAME: tesapp
-  AZURE_WEBAPP_PACKAGE_PATH: TestDeploy\publish
+  AZURE_WEBAPP_PACKAGE_PATH: TestDeploy/publish
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 6.0.x
   WORKING_DIRECTORY: TestDeploy
+
 jobs:
   build:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
+
     - name: Setup .NET SDK
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{ env.DOTNET_CORE_VERSION }}
+
     - name: Restore
       run: dotnet restore "${{ env.WORKING_DIRECTORY }}"
+
     - name: Build
       run: dotnet build "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-restore
+
     - name: Test
       run: dotnet test "${{ env.WORKING_DIRECTORY }}" --no-build
+
     - name: Publish
-      run: dotnet publish "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-build --output "${{ env.AZURE_WEBAPP_PACKAGE_PATH }}"
+      run: dotnet publish "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --output "${{ github.workspace }}/${{ env.AZURE_WEBAPP_PACKAGE_PATH }}"
+
     - name: Publish Artifacts
       uses: actions/upload-artifact@v3
       with:
         name: webapp
-        path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+        path: "${{ github.workspace }}/${{ env.AZURE_WEBAPP_PACKAGE_PATH }}"
+
   deploy:
     runs-on: windows-latest
     needs: build
@@ -39,10 +49,11 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: webapp
-        path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+        path: "${{ github.workspace }}/${{ env.AZURE_WEBAPP_PACKAGE_PATH }}"
+
     - name: Deploy to Azure WebApp
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
         publish-profile: ${{ secrets.tesapp_E4A1 }}
-        package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+        package: "${{ github.workspace }}/${{ env.AZURE_WEBAPP_PACKAGE_PATH }}"
